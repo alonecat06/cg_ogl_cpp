@@ -16,10 +16,19 @@
     <Filter Include="源文件\1.03 Setup GLEW GLFW">
       <UniqueIdentifier>{9983baa3-7e12-4aa7-ac01-75e8dde578ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\2.05 Shader and Triangle">
+      <UniqueIdentifier>{151948f3-647f-4d71-aed5-cb1261582c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Common">
+      <UniqueIdentifier>{89ab2c11-6611-4439-bf70-dd99ed2f4668}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.03main.cpp">
       <Filter>源文件\1.03 Setup GLEW GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="2.05main.cpp">
+      <Filter>源文件\2.05 Shader and Triangle</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
