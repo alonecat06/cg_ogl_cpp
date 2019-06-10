@@ -21,6 +21,8 @@
   <ItemGroup>
     <ClCompile Include="1.03main.cpp" />
     <ClCompile Include="2.05main.cpp" />
+    <ClCompile Include="2.07main.cpp" />
+    <ClCompile Include="2.09main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -83,7 +85,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/../External Libs/glew-2.1.0/include;$(SolutionDir)/../External Libs/glfw-3.3/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/../External Libs/glew-2.1.0/include;$(SolutionDir)/../External Libs/glfw-3.3/include;$(SolutionDir)/../External Libs/glm-0.9.9.3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)/../External Libs/glew-2.1.0/lib/Release/Win32;$(SolutionDir)/../External Libs/glfw-3.3/lib-vc2017;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>

@@ -19,8 +19,11 @@
     <Filter Include="源文件\2.05 Shader and Triangle">
       <UniqueIdentifier>{151948f3-647f-4d71-aed5-cb1261582c48}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\Common">
-      <UniqueIdentifier>{89ab2c11-6611-4439-bf70-dd99ed2f4668}</UniqueIdentifier>
+    <Filter Include="源文件\2.07 Uniform Variable">
+      <UniqueIdentifier>{69cba009-a0da-498a-acbf-b9adbbbbf76c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\2.09 GLM Translation">
+      <UniqueIdentifier>{d3083cba-219a-4f2a-8943-307cb1b37dc0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -29,6 +32,12 @@
     </ClCompile>
     <ClCompile Include="2.05main.cpp">
       <Filter>源文件\2.05 Shader and Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="2.07main.cpp">
+      <Filter>源文件\2.07 Uniform Variable</Filter>
+    </ClCompile>
+    <ClCompile Include="2.09main.cpp">
+      <Filter>源文件\2.09 GLM Translation</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
