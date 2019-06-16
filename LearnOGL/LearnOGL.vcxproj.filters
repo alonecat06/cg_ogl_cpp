@@ -25,6 +25,24 @@
     <Filter Include="源文件\2.08 ~ 2.11 GLM Transform">
       <UniqueIdentifier>{d3083cba-219a-4f2a-8943-307cb1b37dc0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\2.13 Interpolation">
+      <UniqueIdentifier>{fb4661f0-fc70-496c-8281-28efac6ca3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\2.14 Index Draw">
+      <UniqueIdentifier>{0f8aae04-382f-4425-bc81-1b57d7d4799d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\2.15 Projections">
+      <UniqueIdentifier>{6640fc4d-c124-483e-be40-46592c1b7609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\2.16 Clearup">
+      <UniqueIdentifier>{ad4c2ef3-caae-4e94-b96a-408f3049112e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Common">
+      <UniqueIdentifier>{32056cda-f609-4959-9234-8d9f481c4074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Common">
+      <UniqueIdentifier>{b6ee030f-307c-4ae2-aec8-738a361e99f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.03main.cpp">
@@ -39,5 +57,37 @@
     <ClCompile Include="2.08main.cpp">
       <Filter>源文件\2.08 ~ 2.11 GLM Transform</Filter>
     </ClCompile>
+    <ClCompile Include="2.13main.cpp">
+      <Filter>源文件\2.13 Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="2.14main.cpp">
+      <Filter>源文件\2.14 Index Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="2.15main.cpp">
+      <Filter>源文件\2.15 Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="2.16main.cpp">
+      <Filter>源文件\2.16 Clearup</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mesh.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
