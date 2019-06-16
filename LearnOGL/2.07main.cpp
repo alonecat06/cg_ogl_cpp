@@ -13,7 +13,7 @@
 //bool direction = true;
 //float triOffset = 0.0f;
 //float triMaxoffset = 0.7f;
-//float triIncrement = 0.0005f;
+//float triIncrement = 0.005f;
 //
 //// Vertex shader
 //static const char* vShader = "                                                            \n\

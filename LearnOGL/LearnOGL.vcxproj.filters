@@ -22,7 +22,7 @@
     <Filter Include="源文件\2.07 Uniform Variable">
       <UniqueIdentifier>{69cba009-a0da-498a-acbf-b9adbbbbf76c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\2.09 GLM Translation">
+    <Filter Include="源文件\2.08 ~ 2.11 GLM Transform">
       <UniqueIdentifier>{d3083cba-219a-4f2a-8943-307cb1b37dc0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -36,8 +36,8 @@
     <ClCompile Include="2.07main.cpp">
       <Filter>源文件\2.07 Uniform Variable</Filter>
     </ClCompile>
-    <ClCompile Include="2.09main.cpp">
-      <Filter>源文件\2.09 GLM Translation</Filter>
+    <ClCompile Include="2.08main.cpp">
+      <Filter>源文件\2.08 ~ 2.11 GLM Transform</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
