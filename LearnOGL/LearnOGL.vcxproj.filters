@@ -37,11 +37,14 @@
     <Filter Include="源文件\2.16 Clearup">
       <UniqueIdentifier>{ad4c2ef3-caae-4e94-b96a-408f3049112e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\Common">
-      <UniqueIdentifier>{32056cda-f609-4959-9234-8d9f481c4074}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\Common">
       <UniqueIdentifier>{b6ee030f-307c-4ae2-aec8-738a361e99f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\2.18 Camera movement">
+      <UniqueIdentifier>{5e53ff7a-7129-40f4-9804-29477ca13d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Common">
+      <UniqueIdentifier>{32056cda-f609-4959-9234-8d9f481c4074}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +81,12 @@
     <ClCompile Include="Window.cpp">
       <Filter>源文件\Common</Filter>
     </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="2.18main.cpp">
+      <Filter>源文件\2.18 Camera movement</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mesh.h">
@@ -87,6 +96,9 @@
       <Filter>头文件\Common</Filter>
     </ClInclude>
     <ClInclude Include="Window.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
       <Filter>头文件\Common</Filter>
     </ClInclude>
   </ItemGroup>
