@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\Common">
+      <UniqueIdentifier>{b6ee030f-307c-4ae2-aec8-738a361e99f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Common">
+      <UniqueIdentifier>{32056cda-f609-4959-9234-8d9f481c4074}</UniqueIdentifier>
+    </Filter>
     <Filter Include="源文件\1.03 Setup GLEW GLFW">
       <UniqueIdentifier>{9983baa3-7e12-4aa7-ac01-75e8dde578ab}</UniqueIdentifier>
     </Filter>
@@ -37,14 +43,11 @@
     <Filter Include="源文件\2.16 Clearup">
       <UniqueIdentifier>{ad4c2ef3-caae-4e94-b96a-408f3049112e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\Common">
-      <UniqueIdentifier>{b6ee030f-307c-4ae2-aec8-738a361e99f5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\2.18 Camera movement">
       <UniqueIdentifier>{5e53ff7a-7129-40f4-9804-29477ca13d3b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\Common">
-      <UniqueIdentifier>{32056cda-f609-4959-9234-8d9f481c4074}</UniqueIdentifier>
+    <Filter Include="源文件\2.21 Texture mapping">
+      <UniqueIdentifier>{ee31ec1b-2aa8-4d2a-9788-a6a79779c448}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +90,12 @@
     <ClCompile Include="2.18main.cpp">
       <Filter>源文件\2.18 Camera movement</Filter>
     </ClCompile>
+    <ClCompile Include="2.21main.cpp">
+      <Filter>源文件\2.21 Texture mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mesh.h">
@@ -99,6 +108,9 @@
       <Filter>头文件\Common</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
       <Filter>头文件\Common</Filter>
     </ClInclude>
   </ItemGroup>
