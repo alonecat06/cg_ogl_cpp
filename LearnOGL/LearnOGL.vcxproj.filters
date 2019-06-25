@@ -43,23 +43,26 @@
     <Filter Include="源文件\2.16 Clearup">
       <UniqueIdentifier>{ad4c2ef3-caae-4e94-b96a-408f3049112e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\2.18 Camera movement">
+    <Filter Include="源文件\3.18 Camera movement">
       <UniqueIdentifier>{5e53ff7a-7129-40f4-9804-29477ca13d3b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\2.21 Texture mapping">
+    <Filter Include="源文件\4.21 Texture mapping">
       <UniqueIdentifier>{ee31ec1b-2aa8-4d2a-9788-a6a79779c448}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\2.23 Ambient lighting">
+    <Filter Include="源文件\4.23 Ambient lighting">
       <UniqueIdentifier>{9cf6c438-5f81-47a5-a3ec-bfdf9f82261a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\2.24 Diffuse lighting">
+    <Filter Include="源文件\4.24 Diffuse lighting">
       <UniqueIdentifier>{7f83ff28-31c9-4cf2-a130-9328fdd8d7ff}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\2.25 Specular lighting">
+    <Filter Include="源文件\4.25 Specular lighting">
       <UniqueIdentifier>{44a34f8e-3c80-429a-90bb-2e8feb9df710}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\2.27 Point lights">
+    <Filter Include="源文件\4.27 Point lights">
       <UniqueIdentifier>{c6d7b531-e353-4a19-b924-6645efbbaef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\4.28 Spot lights">
+      <UniqueIdentifier>{3784e395-43e3-48dd-9dc1-9f99d94dc720}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -99,38 +102,44 @@
     <ClCompile Include="Camera.cpp">
       <Filter>源文件\Common</Filter>
     </ClCompile>
-    <ClCompile Include="2.18main.cpp">
-      <Filter>源文件\2.18 Camera movement</Filter>
-    </ClCompile>
-    <ClCompile Include="2.21main.cpp">
-      <Filter>源文件\2.21 Texture mapping</Filter>
-    </ClCompile>
     <ClCompile Include="Texture.cpp">
       <Filter>源文件\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="2.23main.cpp">
-      <Filter>源文件\2.23 Ambient lighting</Filter>
     </ClCompile>
     <ClCompile Include="Light.cpp">
       <Filter>源文件\Common</Filter>
     </ClCompile>
-    <ClCompile Include="2.24main.cpp">
-      <Filter>源文件\2.24 Diffuse lighting</Filter>
-    </ClCompile>
-    <ClCompile Include="2.25main.cpp">
-      <Filter>源文件\2.25 Specular lighting</Filter>
-    </ClCompile>
     <ClCompile Include="Material.cpp">
       <Filter>源文件\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="2.27main.cpp">
-      <Filter>源文件\2.27 Point lights</Filter>
     </ClCompile>
     <ClCompile Include="DirectionalLight.cpp">
       <Filter>源文件\Common</Filter>
     </ClCompile>
     <ClCompile Include="PointLight.cpp">
       <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="3.18main.cpp">
+      <Filter>源文件\3.18 Camera movement</Filter>
+    </ClCompile>
+    <ClCompile Include="4.21main.cpp">
+      <Filter>源文件\4.21 Texture mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="4.23main.cpp">
+      <Filter>源文件\4.23 Ambient lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="4.24main.cpp">
+      <Filter>源文件\4.24 Diffuse lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="4.25main.cpp">
+      <Filter>源文件\4.25 Specular lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="4.27main.cpp">
+      <Filter>源文件\4.27 Point lights</Filter>
+    </ClCompile>
+    <ClCompile Include="4.28main.cpp">
+      <Filter>源文件\4.28 Spot lights</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotLight.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +172,9 @@
     </ClInclude>
     <ClInclude Include="PointLight.h">
       <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotLight.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
