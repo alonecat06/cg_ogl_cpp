@@ -55,6 +55,12 @@
     <Filter Include="源文件\2.24 Diffuse lighting">
       <UniqueIdentifier>{7f83ff28-31c9-4cf2-a130-9328fdd8d7ff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\2.25 Specular lighting">
+      <UniqueIdentifier>{44a34f8e-3c80-429a-90bb-2e8feb9df710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\2.27 Point lights">
+      <UniqueIdentifier>{c6d7b531-e353-4a19-b924-6645efbbaef2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.03main.cpp">
@@ -111,6 +117,21 @@
     <ClCompile Include="2.24main.cpp">
       <Filter>源文件\2.24 Diffuse lighting</Filter>
     </ClCompile>
+    <ClCompile Include="2.25main.cpp">
+      <Filter>源文件\2.25 Specular lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="2.27main.cpp">
+      <Filter>源文件\2.27 Point lights</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLight.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mesh.h">
@@ -129,6 +150,18 @@
       <Filter>头文件\Common</Filter>
     </ClInclude>
     <ClInclude Include="Light.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonValues.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
       <Filter>头文件\Common</Filter>
     </ClInclude>
   </ItemGroup>
