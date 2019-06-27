@@ -34,11 +34,13 @@
     <ClCompile Include="4.25main.cpp" />
     <ClCompile Include="4.27main.cpp" />
     <ClCompile Include="4.28main.cpp" />
+    <ClCompile Include="4.29main.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="DirectionalLight.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Model.cpp" />
     <ClCompile Include="PointLight.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="SpotLight.cpp" />
@@ -52,6 +54,7 @@
     <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
     <ClInclude Include="PointLight.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="SpotLight.h" />
@@ -119,11 +122,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/../External Libs/glew-2.1.0/include;$(SolutionDir)/../External Libs/glfw-3.3/include;$(SolutionDir)/../External Libs/glm-0.9.9.3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/../External Libs/glew-2.1.0/include;$(SolutionDir)/../External Libs/glfw-3.3/include;$(SolutionDir)/../External Libs/glm-0.9.9.3;$(SolutionDir)/../External Libs/assimp-3.3.1/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)/../External Libs/glew-2.1.0/lib/Release/Win32;$(SolutionDir)/../External Libs/glfw-3.3/lib-vc2017;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/../External Libs/glew-2.1.0/lib/Release/Win32;$(SolutionDir)/../External Libs/glfw-3.3/lib-vc2017;$(SolutionDir)/../External Libs/assimp-3.3.1/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>

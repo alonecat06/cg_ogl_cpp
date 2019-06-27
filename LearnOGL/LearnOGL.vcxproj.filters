@@ -64,6 +64,9 @@
     <Filter Include="源文件\4.28 Spot lights">
       <UniqueIdentifier>{3784e395-43e3-48dd-9dc1-9f99d94dc720}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\4.29 Model importing">
+      <UniqueIdentifier>{1f67f42b-e6e0-4f87-bcf7-3fc878c28a3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.03main.cpp">
@@ -138,8 +141,14 @@
     <ClCompile Include="4.28main.cpp">
       <Filter>源文件\4.28 Spot lights</Filter>
     </ClCompile>
+    <ClCompile Include="4.29main.cpp">
+      <Filter>源文件\4.29 Model importing</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
     <ClCompile Include="SpotLight.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -173,8 +182,11 @@
     <ClInclude Include="PointLight.h">
       <Filter>头文件\Common</Filter>
     </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
     <ClInclude Include="SpotLight.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
