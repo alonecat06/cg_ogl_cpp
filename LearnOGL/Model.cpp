@@ -88,9 +88,9 @@ void Model::LoadMesh(aiMesh* mesh, const aiScene* scene)
 
 void Model::LoadMaterial(const aiScene* scene)
 {
-	textureList.resize(scene->mNumTextures);
+	textureList.resize(scene->mNumMaterials);
 
-	for (size_t i = 0; i < scene->mNumTextures; ++i)
+	for (size_t i = 0; i < scene->mNumMaterials; ++i)
 	{
 		aiMaterial* material = scene->mMaterials[i];
 
@@ -104,7 +104,7 @@ void Model::LoadMaterial(const aiScene* scene)
 				int idx = std::string(path.data).rfind("\\");
 				std::string filename = std::string(path.data).substr(idx + 1);
 
-				std::string texPath = std::string("textures/") + filename;
+				std::string texPath = std::string("Textures/") + filename;
 
 				textureList[i] = new Texture(texPath.c_str());
 
