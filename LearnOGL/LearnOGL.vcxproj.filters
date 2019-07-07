@@ -67,6 +67,12 @@
     <Filter Include="源文件\4.29 Model importing">
       <UniqueIdentifier>{1f67f42b-e6e0-4f87-bcf7-3fc878c28a3f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\5.31 Directional shadow maps">
+      <UniqueIdentifier>{d59ce513-9167-4f9f-8f11-662ced725dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\5.33 Omnidirectional shadow maps">
+      <UniqueIdentifier>{3a707fc1-1a07-4d5e-b5ba-e41165dfcc8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.03main.cpp">
@@ -150,6 +156,18 @@
     <ClCompile Include="SpotLight.cpp">
       <Filter>源文件\Common</Filter>
     </ClCompile>
+    <ClCompile Include="5.31main.cpp">
+      <Filter>源文件\5.31 Directional shadow maps</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowMap.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="5.33main.cpp">
+      <Filter>源文件\5.33 Omnidirectional shadow maps</Filter>
+    </ClCompile>
+    <ClCompile Include="OmniShadowMap.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mesh.h">
@@ -186,6 +204,12 @@
       <Filter>头文件\Common</Filter>
     </ClInclude>
     <ClInclude Include="SpotLight.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowMap.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="OmniShadowMap.h">
       <Filter>头文件\Common</Filter>
     </ClInclude>
   </ItemGroup>

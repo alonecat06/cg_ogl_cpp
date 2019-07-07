@@ -1,11 +1,11 @@
 #pragma once
 #include "PointLight.h"
-
 class SpotLight :
 	public PointLight
 {
 public:
 	SpotLight();
+
 	SpotLight(GLfloat red, GLfloat green, GLfloat blue,
 		GLfloat aIntensity, GLfloat dIntensity,
 		GLfloat xPos, GLfloat yPos, GLfloat zPos,

@@ -1,7 +1,6 @@
 #include "Model.h"
 
 
-
 Model::Model()
 {
 }
@@ -34,7 +33,7 @@ void Model::LoadModel(const std::string& fileName)
 
 	LoadNode(scene->mRootNode, scene);
 
-	LoadMaterial(scene);
+	LoadMaterials(scene);
 }
 
 void Model::LoadNode(aiNode* node, const aiScene* scene)
@@ -86,7 +85,7 @@ void Model::LoadMesh(aiMesh* mesh, const aiScene* scene)
 	meshToTex.push_back(mesh->mMaterialIndex);
 }
 
-void Model::LoadMaterial(const aiScene* scene)
+void Model::LoadMaterials(const aiScene * scene)
 {
 	textureList.resize(scene->mNumMaterials);
 

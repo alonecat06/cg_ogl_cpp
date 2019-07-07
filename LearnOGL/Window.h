@@ -8,7 +8,8 @@ class Window
 {
 public:
 	Window();
-	Window(GLuint windowWidth, GLint windowHeight);
+
+	Window(GLint windowWidth, GLint windowHeight);
 
 	int initialize();
 

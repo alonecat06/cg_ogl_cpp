@@ -11,7 +11,7 @@ Window::Window()
 	}
 }
 
-Window::Window(GLuint windowWidth, GLint windowHeight)
+Window::Window(GLint windowWidth, GLint windowHeight)
 {
 	width = windowWidth;
 	height = windowHeight;
@@ -52,19 +52,20 @@ int Window::initialize()
 	// Get buffer size information
 	glfwGetFramebufferSize(mainWindow, &bufferWidth, &bufferHeight);
 
-	// Set context for GLEW to use
+	// Set the current context
 	glfwMakeContextCurrent(mainWindow);
 
-	// Set the current context
+	// Handle Key + Mouse Input
 	createCallbacks();
-	//glfwSetInputMode(mainWindow, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	glfwSetInputMode(mainWindow, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
-	// Allow modern extension features
+	// Allow modern extension access
 	glewExperimental = GL_TRUE;
 
-	if (glewInit() != GLEW_OK)
+	GLenum error = glewInit();
+	if (error != GLEW_OK)
 	{
-		printf("GLEW initializaion failed!");
+		printf("Error: %s", glewGetErrorString(error));
 		glfwDestroyWindow(mainWindow);
 		glfwTerminate();
 		return 1;
@@ -72,7 +73,7 @@ int Window::initialize()
 
 	glEnable(GL_DEPTH_TEST);
 
-	// Setup viewport size
+	// Create Viewport
 	glViewport(0, 0, bufferWidth, bufferHeight);
 
 	glfwSetWindowUserPointer(mainWindow, this);
@@ -112,12 +113,10 @@ void Window::handleKeys(GLFWwindow* window, int key, int code, int action, int m
 		if (action == GLFW_PRESS)
 		{
 			theWindow->keys[key] = true;
-			//printf("pressed:%d\n", key);
 		}
 		else if (action == GLFW_RELEASE)
 		{
 			theWindow->keys[key] = false;
-			//printf("released:%d\n", key);
 		}
 	}
 }
@@ -138,8 +137,6 @@ void Window::handleMouse(GLFWwindow* window, double xPos, double yPos)
 
 	theWindow->lastX = xPos;
 	theWindow->lastY = yPos;
-
-	//printf("x:%.6f, y:%.6f\n", theWindow->xChange, theWindow->yChange);
 }
 
 Window::~Window()

@@ -1,10 +1,6 @@
 #include "Camera.h"
-#include <stdio.h>
 
-Camera::Camera()
-{
-
-}
+Camera::Camera() {}
 
 Camera::Camera(glm::vec3 startPosition, glm::vec3 startUp, GLfloat startYaw, GLfloat startPitch, GLfloat startMoveSpeed, GLfloat startTurnSpeed)
 {
@@ -18,9 +14,6 @@ Camera::Camera(glm::vec3 startPosition, glm::vec3 startUp, GLfloat startYaw, GLf
 	turnSpeed = startTurnSpeed;
 
 	update();
-
-	//printf("position %f, %f, %f", position.x, position.y, position.z);
-	//printf("front %f, %f, %f", front.x, front.y, front.z);
 }
 
 void Camera::keyControl(bool* keys, GLfloat deltaTime)
@@ -31,14 +24,17 @@ void Camera::keyControl(bool* keys, GLfloat deltaTime)
 	{
 		position += front * velocity;
 	}
+
 	if (keys[GLFW_KEY_S])
 	{
 		position -= front * velocity;
 	}
+
 	if (keys[GLFW_KEY_A])
 	{
 		position -= right * velocity;
 	}
+
 	if (keys[GLFW_KEY_D])
 	{
 		position += right * velocity;
@@ -59,7 +55,7 @@ void Camera::mouseControl(GLfloat xChange, GLfloat yChange)
 	}
 	if (pitch < -89.0f)
 	{
-		pitch = 89.0f;
+		pitch = -89.0f;
 	}
 
 	update();
@@ -74,7 +70,6 @@ glm::vec3 Camera::getCameraPosition()
 {
 	return position;
 }
-
 glm::vec3 Camera::getCameraDirection()
 {
 	return glm::normalize(front);
