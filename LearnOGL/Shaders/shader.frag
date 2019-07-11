@@ -6,7 +6,7 @@ in vec3 Normal;
 in vec3 FragPos;
 in vec4 DirectionalLightSpacePos;
 
-out vec4 color;
+out vec4 colour;
 
 const int MAX_POINT_LIGHTS = 3;
 const int MAX_SPOT_LIGHTS = 3;
@@ -67,7 +67,7 @@ uniform Material material;
 
 uniform vec3 eyePosition;
 
-vec3 gridSamplingDisk[20] = vec3[]
+vec3 sampleOffsetDirections[20] = vec3[]
 (
    vec3(1, 1,  1), vec3( 1, -1,  1), vec3(-1, -1,  1), vec3(-1, 1,  1), 
    vec3(1, 1, -1), vec3( 1, -1, -1), vec3(-1, -1, -1), vec3(-1, 1, -1),
@@ -85,9 +85,9 @@ float CalcDirectionalShadowFactor(DirectionalLight light)
 	float current = projCoords.z;
 	
 	vec3 normal = normalize(Normal);
-	vec3 lightDir = normalize(light.direction);
-
-	float bias = max(0.05 * (1 - dot(normal, lightDir)), 0.005);
+	vec3 lightDir = normalize(directionalLight.direction);
+	
+	float bias = max(0.05 * (1.0 - dot(normal, lightDir)), 0.0005);
 	
 	float shadow = 0.0;
 	vec2 texelSize = 1.0 / textureSize(directionalShadowMap, 0);
@@ -146,18 +146,20 @@ float CalcOmniShadowFactor(PointLight light, int shadowIndex)
 	//shadow /= (samples * samples * samples);
 	//return shadow;
 	
+	//method 3
 	vec3 fragToLight = FragPos - light.position;
 	float current = length(fragToLight);
 	
 	float shadow = 0.0;
-	float bias   = 0.15;
-	int samples  = 20;
+	float bias = 0.05;
+	int samples = 20;
+	
 	float viewDistance = length(eyePosition - FragPos);
 	float diskRadius = (1.0 + (viewDistance / omniShadowMaps[shadowIndex].farPlane)) / 25.0;
 	for(int i = 0; i < samples; ++i)
 	{
-		float closest = texture(omniShadowMaps[shadowIndex].shadowMap, fragToLight + gridSamplingDisk[i] * diskRadius).r;
-		closest *= omniShadowMaps[shadowIndex].farPlane;   // Undo mapping [0;1]
+		float closest = texture(omniShadowMaps[shadowIndex].shadowMap, fragToLight + sampleOffsetDirections[i] * diskRadius).r;
+		closest *= omniShadowMaps[shadowIndex].farPlane;
 		if(current - bias > closest)
 			shadow += 1.0;
 	}
@@ -171,7 +173,7 @@ vec4 CalcLightByDirection(Light light, vec3 direction, float shadowFactor)
 	vec4 ambientColour = vec4(light.colour, 1.0f) * light.ambientIntensity;
 	
 	float diffuseFactor = max(dot(normalize(Normal), normalize(direction)), 0.0f);
-	vec4 diffuseColour = vec4(light.colour, 1.0f) * light.diffuseIntensity * diffuseFactor;
+	vec4 diffuseColour = vec4(light.colour * light.diffuseIntensity * diffuseFactor, 1.0f);
 	
 	vec4 specularColour = vec4(0, 0, 0, 0);
 	
@@ -259,5 +261,5 @@ void main()
 	finalColour += CalcPointLights();
 	finalColour += CalcSpotLights();
 	
-	color = texture(theTexture, TexCoord) * finalColour;
+	colour = texture(theTexture, TexCoord) * finalColour;
 }

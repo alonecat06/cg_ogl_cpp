@@ -73,6 +73,9 @@
     <Filter Include="源文件\5.33 Omnidirectional shadow maps">
       <UniqueIdentifier>{3a707fc1-1a07-4d5e-b5ba-e41165dfcc8b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\5.36 Skybox">
+      <UniqueIdentifier>{5c219a87-dbb0-4309-ac0d-2ee453b67075}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.03main.cpp">
@@ -168,6 +171,12 @@
     <ClCompile Include="OmniShadowMap.cpp">
       <Filter>源文件\Common</Filter>
     </ClCompile>
+    <ClCompile Include="5.36main.cpp">
+      <Filter>源文件\5.36 Skybox</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mesh.h">
@@ -211,6 +220,9 @@
     </ClInclude>
     <ClInclude Include="OmniShadowMap.h">
       <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
